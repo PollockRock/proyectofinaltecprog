@@ -1,0 +1,54 @@
+.footer {
+	height: 80px;
+	background: var(--negro);
+
+	.footer-contenido {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		color: var(--blanco);
+		transform: scale(0.8);
+
+		.contenedor-utn {
+			width: 150px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
+
+			.logo-utn {
+				width: 100%;
+			}
+
+			p {
+				text-align: center;
+				font-size: 12px;
+				margin: 0;
+			}
+		}
+
+		.separador {
+			height: 70%;
+			width: 1px;
+			background: var(--rojo-suave);
+		}
+
+		.integrantes {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			font-size: 12px;
+			gap: 0.3rem;
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+}

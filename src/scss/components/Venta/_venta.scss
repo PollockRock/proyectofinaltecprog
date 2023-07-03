@@ -1,0 +1,31 @@
+.venta {
+	position: relative;
+	overflow: hidden;
+	padding: 1rem 0 0 2rem;
+
+	.vista-formulario-cliente,
+	.vista-checkout,
+	.vista-facturacion {
+		transform: translateX(100%);
+		position: fixed;
+		z-index: 101;
+		transition: transform ease-in-out 0.5s;
+		inset: 100px 0 0;
+		padding: 1rem 2rem;
+		background-color: var(--blanco);
+		border-left: solid 5px var(--gris-claro);
+		.boton-regresar {
+			background-color: var(--rojo-suave);
+		}
+	}
+
+	.contenedor-venta {
+		margin-top: 1rem;
+		position: absolute;
+		inset: 0;
+		overflow: hidden scroll;
+		height: 77vh;
+		background-color: var(--blanco);
+		padding: 0.2rem 1rem 0 2rem;
+	}
+}

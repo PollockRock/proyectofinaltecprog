@@ -1,0 +1,71 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--text-font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--title-font);
+  font-weight: normal;
+  margin-bottom: .5rem;
+}
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+
+// Enlaces
+
+a, a:visited {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--rojo-suave);
+}
+
+// Botones
+.boton {
+  border: none;
+  height: 40px;
+  color: var(--blanco);
+  font-size: 18px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+// Scroll Navegador
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--negro);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--negro);    /* color of the scroll thumb */
+  border-radius: 0px;       /* roundness of the scroll thumb */
+  border: 2px solid var(--rojo-suave);  /* creates padding around scroll thumb */
+}

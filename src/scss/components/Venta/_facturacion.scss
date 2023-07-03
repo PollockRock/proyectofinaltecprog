@@ -1,0 +1,85 @@
+.vista-facturacion.active {
+	transform: translateX(0);
+	z-index: 250;
+}
+
+.header-facturacion {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4rem;
+	margin: 1rem 0;
+
+	& .form-titulo {
+		width: 500px;
+		margin-bottom: 0;
+		padding-bottom: 0.3rem;
+		border-bottom: solid 2px var(--gris-medio);
+		color: var(--rojo-suave);
+	}
+}
+
+.cliente-factura {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+	padding-bottom: 4rem;
+	position: relative;
+
+	ul > li {
+		line-height: 25px;
+	}
+
+	.precio-total {
+		position: absolute;
+		right: 30%;
+		bottom: 0;
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+	h1 {
+		text-transform: uppercase;
+		color: var(--negro);
+		font-weight: 700;
+		border: solid 1px var(--gris-oscuro);
+		width: 50px;
+		height: 50px;
+		text-align: center;
+	}
+
+	ul,
+	li {
+		list-style: none;
+		margin: 0;
+	}
+
+	.contenedor {
+		width: 600px;
+		padding: 1rem 3rem;
+		border: solid 1px var(--gris-oscuro);
+	}
+
+	.datos-productos {
+		width: 1200px;
+		margin-top: 2rem;
+
+		table {
+			width: 100%;
+			text-align: center;
+
+			th {
+				border-bottom: 1px solid var(--gris-medio);
+			}
+
+			tr {
+			}
+		}
+	}
+}

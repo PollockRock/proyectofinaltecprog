@@ -1,0 +1,96 @@
+.tabla-productos {
+	width: 100%;
+	margin: 1rem 0;
+	padding: 0 0 2rem;
+
+	thead {
+		position: sticky;
+		top: -10px;
+		background-color: var(--blanco);
+
+		th {
+			height: 50px;
+			background-color: var(--blanco);
+			color: var(--negro);
+			font-family: var(--title-font);
+			font-weight: 400px;
+			text-transform: capitalize;
+			border-bottom: solid 2px var(--gris-medio);
+		}
+	}
+
+	.text {
+		padding-left: 10px;
+		text-align: left;
+	}
+	.num {
+		text-align: center;
+	}
+	.id-column {
+		font-family: var(--title-font);
+		font-weight: bold¡;
+	}
+	.nombre-column {
+		min-width: 300px;
+	}
+	.descripcion-column {
+		min-width: 250px;
+	}
+	.categoria-column {
+		width: 40px;
+	}
+	.stock-column {
+		width: 65px;
+	}
+	.stock-minimo-column {
+		width: 65px;
+	}
+	.iva-column {
+		width: 20px;
+		text-align: centerw;
+	}
+	.compra-column {
+		min-width: 150px;
+	}
+	.venta-column {
+		min-width: 150px;
+	}
+
+	tbody {
+		& > tr {
+			height: 60px;
+
+			td {
+				padding: 0 10px;
+				text-transform: capitalize;
+			}
+		}
+
+		tr:hover {
+			background: rgba($color: #414141, $alpha: 0.05);
+		}
+	}
+
+	.boton-column {
+		width: 40px;
+		background-color: var(--blanco);
+
+		button {
+			cursor: pointer;
+			color: white;
+			height: 100%;
+			width: 40px;
+			border: none;
+			border-radius: 5px;
+			padding: 0.5rem;
+			font-size: 16px;
+		}
+
+		.boton-editar {
+			background: var(--gris-oscuro);
+		}
+		.boton-eliminar {
+			background: var(--rojo-suave);
+		}
+	}
+}

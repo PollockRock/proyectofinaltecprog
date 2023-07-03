@@ -1,0 +1,62 @@
+.usuarios {
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 0 0 2rem ;
+  
+  .contenedor-vista-usuario {
+    z-index: 150;
+    transition: transform ease-in-out .5s;
+    position: absolute;
+    inset: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: .2rem 0 0 2rem ;
+    height: 77vh;
+    margin-top: 1rem;
+  }
+
+  .contenedor-tabla {
+    height: 50%;
+  }
+
+  .contenedor-vista-cargar-usuario, 
+  .contenedor-vista-editar-usuario,
+  .contenedor-vista-eliminar-usuario {
+    z-index: 150;
+    transform: translateX(100%);
+    transition: transform ease-in-out .5s;
+    position: fixed;
+    inset: 100px 0 0;
+    padding: 1rem 2rem;
+    background-color: var(--blanco);
+    border-left: solid 5px var(--gris-claro);
+  }
+
+  /* botones */
+  .boton {
+    border: none;
+    height: 40px;
+    color: var(--blanco);
+    font-size: 18px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    border-radius: 5px;
+  }
+  .boton-cargar-usuario {
+    background-color: var(--green);
+    width: 300px;
+    transition: transform ease-in-out .3s;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  .boton-regresar {
+    background-color: var(--rojo-suave);
+    // margin-bottom: 3rem;
+  }
+}

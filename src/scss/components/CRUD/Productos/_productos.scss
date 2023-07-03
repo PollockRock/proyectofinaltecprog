@@ -1,0 +1,45 @@
+.productos {
+	margin-top: 0;
+	position: relative;
+	overflow: hidden;
+	padding: 1rem 0 0 2rem;
+
+	.contenedor-vista-producto {
+		z-index: 99;
+		transition: transform ease-in-out 0.5s;
+		position: absolute;
+		inset: 0;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		padding: 0.2rem 1rem 0 2rem;
+		height: 77vh;
+		margin-top: 1rem;
+	}
+
+	.contenedor-vista-cargar-producto,
+	.contenedor-vista-editar-producto,
+	.contenedor-vista-eliminar-producto {
+		z-index: 101;
+		transform: translateX(100%);
+		transition: transform ease-in-out 0.5s;
+		position: fixed;
+		inset: 100px 0 0;
+		padding: 1rem 2rem;
+		background-color: var(--blanco);
+		border-left: solid 5px var(--gris-claro);
+	}
+
+	/* botones */
+	.boton-cargar-producto {
+		background-color: var(--green);
+		// width: 300px;
+		transition: transform ease-in-out 0.3s;
+
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+	.boton-regresar {
+		background-color: var(--rojo-suave);
+	}
+}

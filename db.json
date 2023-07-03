@@ -1,0 +1,24 @@
+{
+  "productos": [
+    {
+      "nombre": "procesador intel i7-12700 ",
+      "descripcion": "controlador memoria ddr4 4.90 ghz",
+      "stock": "5",
+      "stockMinimo": "2",
+      "compra": "250000",
+      "iva": "21",
+      "utilidad": "40",
+      "venta": "423000",
+      "categoria": "hardware",
+      "id": 6
+    }
+  ],
+  "facturas": [
+    {
+      "nombre": "gonzalo",
+      "cuit": "21486",
+      "domicilio": "asdsad21",
+      "metodo de pago": "efectivo"
+    }
+  ]
+}

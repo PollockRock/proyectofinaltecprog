@@ -1,0 +1,31 @@
+.navCRUD {
+  background: var(--negro);
+  min-height: 300px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  place-items: center;
+  justify-items: flex-end;
+  
+  .enlace {
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-family: var(--title-font);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
+
+  .enlace.active {
+    background-color: var(--blanco);
+    border-left: solid 10px var(--rojo-suave);
+    color: var(--rojo-suave);
+    transition: background-color .3s, border-left .6s, font-size .3s;
+    transition-timing-function: ease-in-out;
+    font-size: 20px;
+  }
+
+}

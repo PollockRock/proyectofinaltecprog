@@ -1,0 +1,70 @@
+.contenedor-vista-editar-producto.active {
+	transform: translateX(0);
+}
+
+.header-editar-producto {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4rem;
+	margin: 1rem 0;
+
+	& .form-titulo {
+		width: 500px;
+		margin-bottom: 0;
+		padding-bottom: 0.3rem;
+		border-bottom: solid 2px var(--gris-medio);
+		color: var(--rojo-suave);
+	}
+}
+
+.form-editar-producto {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 3rem 0 0 0rem;
+	gap: 3rem;
+
+	.form-inputs-contenedor {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 1rem;
+
+		.contenedor {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 1rem;
+		}
+
+		label {
+			width: 200px;
+			text-transform: capitalize;
+			text-align: right;
+		}
+
+		input,
+		select {
+			width: 300px;
+			border: solid 1px var(--gris-medio);
+			border-radius: 5px;
+			height: 35px;
+			padding-left: 0.5rem;
+		}
+	}
+	input.boton-submit {
+		align-self: flex-end;
+		justify-self: flex-end;
+		background: var(--green);
+		color: white;
+		font-family: var(--title-font);
+		width: 300px;
+		border: solid 1px var(--gris-medio);
+		border-radius: 5px;
+		height: 70px;
+		font-size: 20px;
+	}
+}

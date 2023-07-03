@@ -1,0 +1,10 @@
+.inicio {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 100px auto 80px;
+
+	.sectionCRUD {
+		display: grid;
+		grid-template-columns: 150px auto;
+	}
+}

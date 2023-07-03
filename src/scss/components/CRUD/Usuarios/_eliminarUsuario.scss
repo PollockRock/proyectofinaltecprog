@@ -1,0 +1,59 @@
+.contenedor-vista-eliminar-usuario.active {
+  transform: translateX(0);
+}
+
+.header-eliminar-usuario {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  margin: 1rem 0;
+  
+  & .form-titulo {
+    width: 500px;
+    margin-bottom: 0;
+    padding-bottom: .3rem;
+    border-bottom: solid 2px var(--gris-medio);
+    color: var(--rojo-suave);
+  }
+}
+
+.contenedor-vista-eliminar-usuario {
+  
+  z-index: 200;
+  
+  .contenido-eliminar {
+    margin-top: 3rem;
+    margin-left: 8rem;
+
+    .contenedor-botones-eliminar {
+      margin-top: 2rem;
+      width: 320px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .boton-eliminar {
+        width: 140px;
+        height: 40px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: transform ease-in-out .3s;
+        
+        &:hover {
+          transform: scale(1.05);
+        }
+        
+        &.si {
+          background-color: var(--rojo-suave);
+        }
+
+        &.no {
+          background-color: var(--green);
+        }
+      }
+    }
+  }
+}

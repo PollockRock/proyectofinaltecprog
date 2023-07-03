@@ -1,0 +1,85 @@
+.tabla-usuarios {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 0 2rem;
+  
+  thead {
+    position: sticky;
+    top: 0;
+    background-color: var(--blanco);
+    
+    th {
+      background-color: var(--negro);
+      height: 50px;
+      color: var(--blanco);
+      font-family: var(--title-font);
+      // padding-left: .5rem;
+      text-transform: uppercase;
+      border-right: solid 1px #e1e1e150;
+    }
+    
+  }
+  
+  .text {
+    padding-left: 10px;
+  }
+  .num {
+    text-align: center;
+  }
+
+  .nombre-column {
+    width: 300px;
+  }
+  .apellido-column {
+    width: 300px;
+  }
+  .nickname-column {
+    width: 100px;
+  }
+  .email-column {
+    width: 300px;
+  }
+  .telefono-column {
+    width: 100px;
+  }
+  
+  tbody {
+    
+    tr {
+      height: 75px;
+      border-bottom: 1px solid var(--gris-claro);
+      
+      td {
+        padding: 0 10px;
+        min-width: 40px;
+        text-transform: capitalize;
+      }
+    }
+
+    tr:hover {
+      background: rgba($color: #414141, $alpha: .05);
+    }
+    
+  }
+
+  .boton-column {
+    width: 40px;
+    
+    button {
+      color: white;
+      height: 100%;
+      width: 40px;
+      border: none;
+      border-radius: 5px;
+      padding: .5rem;
+      font-size: 16px;
+    }
+
+    .boton-editar {
+      background: var(--gris-oscuro);
+    }
+    .boton-eliminar {
+      background: var(--rojo-suave);
+    }
+  }
+}

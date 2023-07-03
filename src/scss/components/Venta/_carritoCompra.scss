@@ -1,0 +1,127 @@
+.carrito-compra {
+	padding: 0 0.5rem 1rem;
+	width: 100%;
+	min-height: 110px;
+	margin-bottom: 3rem;
+	border-radius: 5px;
+	border: solid 1px var(--gris-medio);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	.carrito-compra-titulo {
+		position: absolute;
+		inset: 0;
+		background-color: var(--rojo-suave);
+		color: var(--blanco);
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px 5px 0 0;
+		border-bottom: 1px solid var(--gris-oscuro);
+	}
+
+	.carrito-compra-aviso {
+		position: absolute;
+		bottom: 0;
+		text-align: center;
+		align-self: center;
+		color: var(--gris-medio);
+		font-size: 16px;
+		font-family: var(--text-font);
+	}
+
+	.carrito-compra-contenedor-productos {
+		margin-top: 5rem;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 3rem 2.5rem;
+		width: 100%;
+
+		.contenedor-producto {
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 0.3rem;
+			border-right: solid 1px var(--gris-claro);
+			padding-right: 1rem;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: clip;
+			text-overflow: ellipsis;
+			.titulo-producto {
+				white-space: nowrap;
+				text-overflow: clip;
+			}
+
+			.texto-producto {
+				border-bottom: 1px solid var(--gris-claro);
+				text-transform: uppercase;
+				padding-bottom: 0.3rem;
+				width: 100%;
+				white-space: nowrap;
+				text-overflow: clip;
+			}
+
+			.contenedor-botones {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 1rem;
+				margin-top: 1rem;
+
+				.botones-cantidad {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					gap: 1rem;
+				}
+
+				button {
+					border: none;
+					cursor: pointer;
+					width: 60px;
+					height: 45px;
+					transition: transform 0.3s ease-in-out;
+					border-radius: 3px;
+
+					&:hover {
+						transform: scale(1.1);
+						background-color: var(--gris-medio);
+					}
+
+					&.boton-eliminar {
+						color: var(--rojo-suave);
+					}
+				}
+			}
+		}
+	}
+
+	.carrito-compra-boton-comprar {
+		margin-top: 4rem;
+		background-color: var(--green);
+		color: white;
+		font-size: 20px;
+		font-family: var(--title-font);
+		border: none;
+		padding: 1rem 2rem;
+		width: 300px;
+		border-radius: 5px;
+		align-self: center;
+		cursor: pointer;
+		transition: transform 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}

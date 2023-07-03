@@ -1,0 +1,118 @@
+.vista-checkout.active {
+	transform: translateX(0);
+	z-index: 250;
+	overflow-y: scroll;
+}
+
+.header-formulario-checkout {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4rem;
+	margin: 1rem 0;
+
+	& .form-titulo {
+		width: 500px;
+		margin-bottom: 0;
+		padding-bottom: 0.3rem;
+		border-bottom: solid 2px var(--gris-medio);
+		color: var(--rojo-suave);
+	}
+}
+
+.resumen-venta {
+	margin: 3rem 0 0 7rem;
+
+	.contenedor-resumen-venta {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 10rem;
+
+		.datos-cliente {
+			line-height: 50px;
+			background: var(--rojo-suave);
+			height: 500px;
+			width: 400px;
+			border-radius: 5px;
+			padding: 1rem;
+			color: white;
+
+			.titulo-cliente {
+				border-bottom: 1px solid var(--gris-claro);
+			}
+
+			.contenedor-info-cliente {
+				text-transform: capitalize;
+				margin-top: 2rem;
+
+				li {
+					color: var(--gris-medio);
+
+					b {
+						color: var(--blanco);
+					}
+				}
+			}
+		}
+
+		.datos-productos {
+			line-height: 21px;
+
+			h3 {
+				margin-bottom: 2rem;
+			}
+
+			.contenedor-datos-productos {
+				border-bottom: 1px solid var(--rojo-suave);
+				margin-bottom: 1rem;
+				text-transform: capitalize;
+				padding-bottom: 0.5rem;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				b {
+					margin-left: 0.5rem;
+				}
+			}
+
+			.contenedor-monto-total {
+				font-size: 24px;
+				background-color: var(--gris-claro);
+				height: 50px;
+				display: flex;
+				align-items: center;
+				padding: 0.5rem;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.boton-checkout-confirmar {
+		width: 56%;
+		margin-top: 2rem;
+		border: none;
+		background-color: var(--green);
+		height: 50px;
+		border-radius: 5px;
+		cursor: pointer;
+		color: var(--blanco);
+		text-transform: capitalize;
+		font-family: var(--title-font);
+		transition: transform 0.3s ease-in-out;
+		margin-bottom: 4rem;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	ul,
+	li {
+		list-style: none;
+	}
+}

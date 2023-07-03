@@ -1,0 +1,163 @@
+.vista-formulario-cliente.active {
+	transform: translateX(0);
+}
+
+.header-formulario-cliente {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4rem;
+	margin: 1rem 0;
+
+	& .form-titulo {
+		width: 500px;
+		margin-bottom: 0;
+		padding-bottom: 0.3rem;
+		border-bottom: solid 2px var(--gris-medio);
+		color: var(--rojo-suave);
+	}
+}
+
+.contenedor-formulario-cliente {
+	width: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 3rem 0 0 7rem;
+
+	.contenedor-a {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		.contenedor {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+
+			label {
+				width: 200px;
+				text-transform: capitalize;
+				text-align: left;
+				margin-right: 2rem;
+			}
+
+			input {
+				margin-top: 0.5rem;
+				border: 1px solid var(--gris-medio);
+				border-radius: 5px;
+				width: 400px;
+				height: 30px;
+				padding-left: 0.5rem;
+			}
+
+			p {
+				font-size: 12px;
+				color: var(--rojo-suave);
+				font-weight: bold;
+			}
+		}
+	}
+
+	.contenedor-b {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		.contenedor-razon-social {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 1rem;
+			text-transform: capitalize;
+			background-color: var(--rojo-suave);
+			height: 195px;
+			border-radius: 5px;
+			width: 500px;
+			padding-left: 2rem;
+
+			.opciones-razon-social {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				gap: 2rem;
+
+				label {
+					text-align: right;
+					color: var(--gris-medio);
+				}
+
+				select {
+					width: 300px;
+					height: 30px;
+					border: 1px solid var(--gris-medio);
+					border-radius: 3px;
+				}
+			}
+
+			.tipoDeFactura-label {
+				text-transform: uppercase;
+				color: var(--blanco);
+				font-family: var(--title-font);
+				font-size: 30px;
+				letter-spacing: 3px;
+			}
+		}
+		.contenedor-metodoDePago {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 2rem;
+			margin-top: 2rem;
+			background-color: var(--gris-claro);
+			padding: 2rem;
+			border-radius: 5px;
+			width: 500px;
+
+			.titulo-metodo-pago {
+				text-transform: capitalize;
+				font-family: var(--title-font);
+				font-size: 20px;
+			}
+
+			.contenedor-metodoDePago-opciones {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				gap: 4rem;
+				text-transform: capitalize;
+
+				label {
+					margin-left: 10px;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.boton-formulario-cliente {
+		position: absolute;
+		bottom: 20%;
+		left: 46%;
+		border: none;
+		background-color: var(--green);
+		width: 500px;
+		height: 50px;
+		border-radius: 5px;
+		cursor: pointer;
+		color: var(--blanco);
+		text-transform: capitalize;
+		font-family: var(--title-font);
+	}
+}
